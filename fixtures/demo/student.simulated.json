@@ -1,0 +1,18 @@
+{
+  "_label": "SIMULATED demo student. Fictional person; all details invented for the demo.",
+  "profile": {
+    "name": "Alex Tan",
+    "major": "Computer Science",
+    "studyLevel": "undergraduate",
+    "currentlyEnrolled": true,
+    "skills": ["Python", "SQL", "TypeScript", "Git", "Power BI", "Data visualization", "React"],
+    "experience": [
+      { "title": "Campus food-waste dashboard (university project)", "organization": "Faculty of Computing", "description": "Built a Power BI dashboard from cafeteria sales data using Python and SQL to clean and join the data." },
+      { "title": "Peer tutor, Programming Fundamentals", "organization": "Faculty of Computing", "description": "Ran weekly Python practice sessions for first-year students." }
+    ],
+    "availability": { "startDate": "2026-06-01", "endDate": "2026-09-30", "hoursPerWeek": 25, "workModes": ["hybrid", "remote"], "locations": ["Kuala Lumpur"] },
+    "resumeText": "Alex Tan. BSc Computer Science (Year 3). Skills: Python, SQL, TypeScript, Git, Power BI, data visualization. Projects: Campus food-waste dashboard in Power BI; data cleaning in Python and SQL. Experience: Peer tutor for Programming Fundamentals (Python).",
+    "email": "alex.tan.student@example.com"
+  },
+  "eligibilityContext": { "internshipCountry": "Malaysia", "visaOrPermitType": "citizen" }
+}
