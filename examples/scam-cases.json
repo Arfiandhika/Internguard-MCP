@@ -1,0 +1,221 @@
+{
+  "description": "Sample inputs for checkInternshipRisk. All companies, people, domains and numbers are fictional. 'expect' lists what a correct analysis must (and must not) report. 'legitimate_looking' cases must still never be described as safe.",
+  "version": 1,
+  "cases": [
+    {
+      "id": "legit_company_careers_page",
+      "kind": "legitimate_looking",
+      "input": {
+        "url": "https://careers.acmeanalytics.com.my/internships/data-2026",
+        "jobDescription": "Data Analytics Intern at Acme Analytics Sdn Bhd. About us: we build reporting tools for retail companies. Duration: 12 weeks, starting June 2026, hybrid (2 days a week in our Kuala Lumpur office). Responsibilities: you will clean sales data, build dashboards in Power BI and support the analytics team with weekly reports. Requirements: undergraduate students pursuing a degree in statistics, computer science or a related field; basic SQL skills. Allowance: RM1,200 per month. How to apply: submit your CV through our careers page. Shortlisted candidates will be invited to an interview via Microsoft Teams. Acme will never ask you to pay any fee or share your password or OTP. Questions: internships@acmeanalytics.com.my"
+      },
+      "expect": {
+        "assessment": "no_major_indicators_detected",
+        "status": "success",
+        "mustNotInclude": ["fee_request", "credential_or_otp_request", "chat_based_interview", "contact_domain_mismatch", "free_webmail_contact"]
+      }
+    },
+    {
+      "id": "legit_ats_hosted",
+      "kind": "legitimate_looking",
+      "input": {
+        "url": "https://boards.greenhouse.io/brightpath/jobs/4417",
+        "jobDescription": "Software Engineering Intern, BrightPath Learning Ltd. You will work with our platform team on internal tools written in TypeScript. Duties include writing tests, fixing bugs and joining code reviews. Requirements: currently enrolled students in their penultimate year; familiarity with Git. Duration 10 weeks, fully remote. Stipend paid monthly. Apply via this page; our recruiting team will schedule a video interview. Contact recruiting@brightpath.example if you need adjustments during the application process."
+      },
+      "expect": {
+        "assessment": "no_major_indicators_detected",
+        "status": "success",
+        "mustNotInclude": ["contact_domain_mismatch", "brand_name_in_unrelated_domain", "url_shortener"]
+      }
+    },
+    {
+      "id": "legit_small_employer_whatsapp_mention",
+      "kind": "legitimate_looking",
+      "input": {
+        "url": "https://www.kopicraft.example/jobs/marketing-intern",
+        "jobDescription": "Urgent hiring: Marketing Intern at KopiCraft Enterprise, a family-run coffee roastery. Responsibilities: you will plan Instagram posts, photograph new products and help at weekend markets. Requirements: diploma or degree students in marketing or design; a portfolio is a plus. Duration: 3 months, on-site in our Penang shop, 5 days a week. Allowance RM900 per month plus meals. Apply by sending your resume to hello@kopicraft.example. Questions? WhatsApp us at +60 12-555 0199."
+      },
+      "expect": {
+        "assessment": "no_major_indicators_detected",
+        "mustInclude": ["urgency_language", "messaging_app_mention"],
+        "mustNotInclude": ["move_to_private_chat", "chat_based_interview"]
+      }
+    },
+    {
+      "id": "scam_registration_fee",
+      "kind": "suspicious",
+      "input": {
+        "url": "https://global-intern-hub.example/apply",
+        "jobDescription": "Congratulations! You have been shortlisted for a paid internship with a multinational company. To confirm your slot you need to pay a registration fee of RM150, refundable after your first month. Only 5 slots left, so reply within 24 hours. Contact our HR on WhatsApp to proceed."
+      },
+      "expect": {
+        "assessment": "high_risk",
+        "mustInclude": ["fee_request", "payment_instruction", "scarcity_pressure", "deadline_pressure", "move_to_private_chat"],
+        "observedCodes": ["fee_request", "payment_instruction"],
+        "heuristicCodes": ["scarcity_pressure", "deadline_pressure"]
+      }
+    },
+    {
+      "id": "scam_otp_request",
+      "kind": "suspicious",
+      "input": {
+        "url": "https://www.linkedin.com/jobs/view/3900000001",
+        "jobDescription": "Remote admin intern position. We are verifying applicants' identities. Please send us the 6-digit OTP you receive by SMS so we can complete your onboarding today."
+      },
+      "expect": {
+        "assessment": "high_risk",
+        "mustInclude": ["credential_or_otp_request"],
+        "observedCodes": ["credential_or_otp_request"]
+      }
+    },
+    {
+      "id": "scam_task_telegram",
+      "kind": "suspicious",
+      "input": {
+        "url": "https://t.me/hr_recruit_desk",
+        "jobDescription": "Flexible part-time internship for students. Interview will be conducted via Telegram. Like and review products on our merchant app and earn RM300/day in commission. No interview needed for top candidates."
+      },
+      "expect": {
+        "assessment": "high_risk",
+        "mustInclude": ["chat_based_interview", "task_scam_pattern", "unrealistic_pay", "messaging_app_link", "no_interview_hiring"]
+      }
+    },
+    {
+      "id": "scam_money_mule",
+      "kind": "suspicious",
+      "input": {
+        "url": "https://finance-assist-careers.example/intern",
+        "jobDescription": "Finance assistant intern. Your main task is to use your personal bank account to receive payments from our overseas clients and transfer them to our partners. Earn 10% of every transfer. Keep this confidential."
+      },
+      "expect": {
+        "assessment": "high_risk",
+        "mustInclude": ["bank_account_use_request", "secrecy_request"],
+        "observedCodes": ["bank_account_use_request"]
+      }
+    },
+    {
+      "id": "scam_gift_card_payment",
+      "kind": "suspicious",
+      "input": {
+        "url": "https://careers-portal.example/start",
+        "jobDescription": "You are selected for our virtual internship programme. Please pay the training fee using Google Play gift cards and send the codes to the coordinator."
+      },
+      "expect": {
+        "assessment": "high_risk",
+        "mustInclude": ["fee_request", "untraceable_payment_method"]
+      }
+    },
+    {
+      "id": "scam_url_embedded_credentials",
+      "kind": "suspicious",
+      "input": {
+        "url": "https://www.linkedin.com@jobs-portal.top/apply?id=88",
+        "jobDescription": "Apply now for the graduate internship. Fill in the form at the link."
+      },
+      "expect": {
+        "assessment": "high_risk",
+        "mustInclude": ["url_embedded_credentials", "suspicious_tld"],
+        "observedCodes": ["url_embedded_credentials"]
+      }
+    },
+    {
+      "id": "scam_brand_impersonation_url",
+      "kind": "suspicious",
+      "input": {
+        "url": "https://linkedin-careers-apply.xyz/intern?ref=campus",
+        "jobDescription": "LinkedIn is hiring summer interns. Submit your details on the official application page to be considered."
+      },
+      "expect": {
+        "assessmentIn": ["medium_risk", "high_risk"],
+        "mustInclude": ["brand_name_in_unrelated_domain", "suspicious_tld"],
+        "heuristicCodes": ["brand_name_in_unrelated_domain"]
+      }
+    },
+    {
+      "id": "scam_homoglyph_domain",
+      "kind": "suspicious",
+      "input": {
+        "url": "https://lіnkedin.com/jobs/view/1",
+        "jobDescription": "Sign in with your account to continue your internship application."
+      },
+      "expect": {
+        "assessment": "high_risk",
+        "mustInclude": ["homoglyph_brand_domain", "internationalized_domain"],
+        "observedCodes": ["homoglyph_brand_domain"]
+      }
+    },
+    {
+      "id": "suspicious_shortener_webmail",
+      "kind": "suspicious",
+      "input": {
+        "url": "https://bit.ly/intern-offer-2026",
+        "jobDescription": "Petronas internship intake now open for all students. Contact our HR on WhatsApp or email petronas.hr.intake@gmail.com for the next steps of the application process. Allowance provided monthly."
+      },
+      "expect": {
+        "assessmentIn": ["medium_risk", "high_risk"],
+        "mustInclude": ["url_shortener", "free_webmail_contact", "move_to_private_chat"],
+        "mustNotInclude": ["messaging_app_mention"]
+      }
+    },
+    {
+      "id": "dangerous_url_scheme",
+      "kind": "suspicious",
+      "input": {
+        "url": "javascript:alert(document.cookie)",
+        "jobDescription": "Click the link to apply for the internship."
+      },
+      "expect": {
+        "assessment": "high_risk",
+        "mustInclude": ["dangerous_url_scheme"]
+      }
+    },
+    {
+      "id": "inconclusive_short_dm",
+      "kind": "inconclusive",
+      "input": {
+        "url": "",
+        "jobDescription": "Intern needed. DM for details."
+      },
+      "expect": {
+        "assessment": "insufficient_evidence",
+        "status": "partial"
+      }
+    },
+    {
+      "id": "inconclusive_vague_with_url",
+      "kind": "inconclusive",
+      "input": {
+        "url": "https://example-company.example/careers",
+        "jobDescription": "Marketing intern wanted. Flexible hours."
+      },
+      "expect": {
+        "assessment": "insufficient_evidence",
+        "status": "success"
+      }
+    },
+    {
+      "id": "inconclusive_empty_description",
+      "kind": "inconclusive",
+      "input": {
+        "url": "https://www.jobstreet.com.my/job/12345678",
+        "jobDescription": "   "
+      },
+      "expect": {
+        "assessment": "insufficient_evidence",
+        "status": "partial"
+      }
+    },
+    {
+      "id": "inconclusive_malformed_url",
+      "kind": "inconclusive",
+      "input": {
+        "url": "ht!tp://???",
+        "jobDescription": "Join our team as an intern."
+      },
+      "expect": {
+        "assessment": "insufficient_evidence",
+        "status": "partial"
+      }
+    }
+  ]
+}

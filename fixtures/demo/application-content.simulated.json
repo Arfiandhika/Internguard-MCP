@@ -1,0 +1,41 @@
+{
+  "_label": "SIMULATED stand-in for the text WorkBuddy generates in step 5. Uses only the demo student's stated profile and each listing's stated requirements.",
+  "packs": {
+    "L1": {
+      "coverLetter": "Dear Acme Analytics hiring team,\n\nI am Alex Tan, a third-year Computer Science undergraduate, and I would like to apply for the Data Analytics Intern role at Acme Analytics Sdn Bhd.\n\nYour listing asks for basic SQL and dashboard work in Power BI. In a university project I built a Power BI dashboard from cafeteria sales data, using Python and SQL to clean and join the data. I also run weekly Python practice sessions as a peer tutor, which has taught me to explain data clearly to people who are new to it.\n\nI am available from 1 June 2026 and can work hybrid from Kuala Lumpur. I would welcome the chance to support your analytics team with weekly reports.\n\nThank you for your time.\n\nAlex Tan\nalex.tan.student@example.com",
+      "recruiterEmail": {
+        "to": "internships@acmeanalytics.com.my",
+        "subject": "Application: Data Analytics Intern (Alex Tan)",
+        "body": "Dear Acme Analytics internship team,\n\nI have submitted my application for the Data Analytics Intern role through your careers page. I am a Computer Science undergraduate with SQL and Power BI project experience, available from June 2026.\n\nThank you for considering my application.\n\nBest regards,\nAlex Tan\nalex.tan.student@example.com"
+      },
+      "checklist": ["Update the CV with the food-waste dashboard project", "Upload the CV through the Acme careers page", "Prepare to show the Power BI dashboard in the interview"],
+      "cvSuggestions": ["Put the Power BI dashboard project first and state the data size and what decision it supported", "Group SQL, Python and Power BI under a 'Data' skills heading"],
+      "missingInformation": ["Your expected graduation date (not in your profile)"],
+      "skillsReferenced": ["SQL", "Power BI", "Python"]
+    },
+    "L2": {
+      "coverLetter": "Dear BrightPath Learning recruiting team,\n\nI am Alex Tan, a third-year Computer Science undergraduate applying for the Software Engineering Intern role at BrightPath Learning Ltd.\n\nThe role involves internal tools written in TypeScript, writing tests and joining code reviews. I use TypeScript and Git in my coursework and personal study, and I am keen to learn how a platform team reviews and tests production code.\n\nI can work fully remote for 25 hours per week from 15 June 2026, which matches the schedule in your listing.\n\nThank you for your consideration.\n\nAlex Tan\nalex.tan.student@example.com",
+      "recruiterEmail": {
+        "to": "recruiting@brightpath.example",
+        "subject": "Software Engineering Intern application (Alex Tan)",
+        "body": "Dear BrightPath recruiting team,\n\nI have applied for the Software Engineering Intern role through your application page. I am a Computer Science undergraduate who uses TypeScript and Git, available remotely for 25 hours per week from 15 June 2026.\n\nKind regards,\nAlex Tan\nalex.tan.student@example.com"
+      },
+      "checklist": ["Confirm you are in your penultimate year, as the listing requires", "Apply through the Greenhouse application page", "Link a Git repository that shows your TypeScript work, if you have one"],
+      "cvSuggestions": ["Add a short project entry that shows TypeScript code you wrote", "List Git under tools with how you use it (branches, pull requests)"],
+      "missingInformation": ["Whether you are in your penultimate year (the listing requires it)", "A public code repository link (none in your profile)"],
+      "skillsReferenced": ["TypeScript", "Git"]
+    },
+    "L3": {
+      "coverLetter": "Dear Northwind Robotics team,\n\nI am Alex Tan, a third-year Computer Science undergraduate applying for the Machine Learning Intern role at Northwind Robotics Sdn Bhd.\n\nThe role involves labelling sensor data, training baseline models in Python and documenting experiments. Python is my strongest language: I used it for data cleaning in my food-waste dashboard project and I teach it weekly as a peer tutor. I have not yet used PyTorch, which your listing mentions as a plus, and I would be glad to learn it during the internship.\n\nI am available from 1 June 2026 for 20 hours per week and can work hybrid in Kuala Lumpur.\n\nThank you for considering my application.\n\nAlex Tan",
+      "recruiterEmail": {
+        "to": null,
+        "subject": "Machine Learning Intern application (Alex Tan)",
+        "body": "Dear Northwind Robotics team,\n\nI am applying for the Machine Learning Intern role. I am a Computer Science undergraduate with Python data-cleaning experience, available 20 hours per week from June 2026.\n\nKind regards,\nAlex Tan"
+      },
+      "checklist": ["Apply through the Northwind careers page (no recruiter email is given)", "Be ready to explain the Python data-cleaning steps in your project"],
+      "cvSuggestions": ["Describe the Python data cleaning in your project with concrete steps", "If you complete any PyTorch tutorial before applying, add it as a course, not as experience"],
+      "missingInformation": ["No recruiter email address is published in the listing", "No PyTorch experience in your profile (listed as a plus, not required)"],
+      "skillsReferenced": ["Python"]
+    }
+  }
+}

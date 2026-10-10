@@ -1,0 +1,54 @@
+{
+  "_label": "SIMULATED listings for the InternGuard demo. Fictional companies and URLs. 'requirements' stands in for what WorkBuddy extracts from each listing; shortlist_internships cross-checks them against the listing text.",
+  "listings": [
+    {
+      "listingRef": "L1", "title": "Data Analytics Intern", "companyName": "Acme Analytics Sdn Bhd", "website": "https://careers.acmeanalytics.com.my",
+      "url": "https://careers.acmeanalytics.com.my/internships/data-2026", "accessStatus": "accessed",
+      "text": "Data Analytics Intern at Acme Analytics Sdn Bhd. About us: we build reporting tools for retail companies. Duration: 12 weeks, starting June 2026, hybrid (2 days a week in our Kuala Lumpur office). Responsibilities: you will clean sales data, build dashboards in Power BI and support the analytics team with weekly reports. Requirements: undergraduate students pursuing a degree in statistics, computer science or a related field; basic SQL skills. Allowance: RM1,200 per month. How to apply: submit your CV through our careers page. Shortlisted candidates will be invited to an interview via Microsoft Teams. Acme will never ask you to pay any fee or share your password or OTP. Questions: internships@acmeanalytics.com.my",
+      "internship": { "durationWeeks": 12, "hoursPerWeek": 20, "isPaid": true },
+      "requirements": { "majors": ["computer science", "statistics"], "studyLevels": ["undergraduate"], "requiresEnrollment": true, "requiredSkills": ["SQL", "Power BI"], "startDate": "2026-06-01", "workMode": "hybrid", "location": "Kuala Lumpur" }
+    },
+    {
+      "listingRef": "L2", "title": "Software Engineering Intern", "companyName": "BrightPath Learning Ltd", "website": "https://brightpath.example",
+      "url": "https://boards.greenhouse.io/brightpath/jobs/4417", "accessStatus": "accessed",
+      "text": "Software Engineering Intern, BrightPath Learning Ltd. You will work with our platform team on internal tools written in TypeScript. Duties include writing tests, fixing bugs and joining code reviews. Requirements: currently enrolled undergraduate students in their penultimate year; familiarity with Git. Duration 10 weeks from 15 June 2026, fully remote, 25 hours per week. Stipend paid monthly. Apply via this page; our recruiting team will schedule a video interview. Contact recruiting@brightpath.example if you need adjustments during the application process.",
+      "internship": { "durationWeeks": 10, "hoursPerWeek": 25, "isPaid": true },
+      "requirements": { "studyLevels": ["undergraduate"], "requiresEnrollment": true, "requiredSkills": ["TypeScript", "Git"], "startDate": "2026-06-15", "workMode": "remote" }
+    },
+    {
+      "listingRef": "L3", "title": "Machine Learning Intern", "companyName": "Northwind Robotics Sdn Bhd", "website": "https://northwind-robotics.example",
+      "url": "https://northwind-robotics.example/careers/ml-intern", "accessStatus": "accessed",
+      "text": "Machine Learning Intern, Northwind Robotics Sdn Bhd. About us: we build warehouse robots. Responsibilities: you will label sensor data, train baseline models in Python and document experiments. Requirements: undergraduate students in computer science, engineering or a related field. PyTorch experience is a plus. Duration: 14 weeks from 1 June 2026, 20 hours per week, hybrid in Kuala Lumpur. Allowance RM1,000 per month. Apply through the careers page; shortlisted applicants are interviewed by video call.",
+      "internship": { "durationWeeks": 14, "hoursPerWeek": 20, "isPaid": true },
+      "requirements": { "majors": ["computer science", "engineering"], "studyLevels": ["undergraduate"], "requiredSkills": ["Python"], "preferredSkills": ["PyTorch"], "minHoursPerWeek": 20, "startDate": "2026-06-01", "workMode": "hybrid", "location": "Kuala Lumpur" }
+    },
+    {
+      "listingRef": "L4", "title": "Paid Internship (Multinational)", "companyName": "Global Intern Hub", "website": "https://global-intern-hub.example",
+      "url": "https://global-intern-hub.example/apply", "accessStatus": "accessed",
+      "text": "Congratulations! You have been shortlisted for a paid internship with a multinational company. To confirm your slot you need to pay a registration fee of RM150, refundable after your first month. Only 5 slots left, so reply within 24 hours. Contact our HR on WhatsApp to proceed.",
+      "internship": {},
+      "requirements": {}
+    },
+    {
+      "listingRef": "L5", "title": "Part-time Online Internship", "companyName": "HR Recruit Desk", "website": null,
+      "url": "https://t.me/hr_recruit_desk", "accessStatus": "accessed",
+      "text": "Flexible part-time internship for students. Interview will be conducted via Telegram. Like and review products on our merchant app and earn RM300/day in commission. No interview needed for top candidates.",
+      "internship": {},
+      "requirements": {}
+    },
+    {
+      "listingRef": "L6", "title": "Content Analytics Intern", "companyName": "Lumen Media Group Sdn Bhd", "website": "https://lumenmedia.example",
+      "url": "https://lumenmedia.example/careers/content-analytics-intern", "accessStatus": "accessed",
+      "text": "Content Analytics Intern, Lumen Media Group Sdn Bhd. Responsibilities: you will analyse audience data with Python or SQL and prepare weekly reports for the editorial team. Requirements: degree students in communications or computer science. Duration 12 weeks from 1 June 2026, full-time 40 hours per week, on-site in Petaling Jaya. Allowance RM1,500 per month. Apply via our careers portal; interviews are held in our office.",
+      "internship": { "durationWeeks": 12, "hoursPerWeek": 40, "isPaid": true },
+      "requirements": { "majors": ["communications", "computer science"], "requiredSkills": ["SQL"], "minHoursPerWeek": 40, "startDate": "2026-06-01", "workMode": "on-site", "location": "Petaling Jaya" }
+    },
+    {
+      "listingRef": "L7", "title": "Business Intern", "companyName": "Harborline Logistics", "website": null,
+      "url": "https://jobs.harborline.example/intern/77", "accessStatus": "not_accessible",
+      "text": null,
+      "internship": {},
+      "requirements": {}
+    }
+  ]
+}

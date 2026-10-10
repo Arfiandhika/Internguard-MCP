@@ -1,0 +1,10 @@
+{
+  "simulated": true,
+  "description": "SIMULATED registry fixture for the InternGuard demo. NOT an official business registry. Every company, number and website here is fictional.",
+  "companies": [
+    { "name": "Acme Analytics Sdn Bhd", "registrationNumber": "SIM-202301000001", "country": "Malaysia", "website": "https://acmeanalytics.com.my", "status": "active" },
+    { "name": "BrightPath Learning Ltd", "registrationNumber": "SIM-202201000002", "country": "Malaysia", "website": "https://brightpath.example", "status": "active" },
+    { "name": "Northwind Robotics Sdn Bhd", "registrationNumber": "SIM-202101000003", "country": "Malaysia", "website": "https://northwind-robotics.example", "status": "active" },
+    { "name": "Lumen Media Group Sdn Bhd", "registrationNumber": "SIM-201901000004", "country": "Malaysia", "website": "https://lumenmedia.example", "status": "active" }
+  ]
+}
