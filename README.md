@@ -464,11 +464,11 @@ Capabilities that depend on WorkBuddy and must be tested on the demo machine:
 Shared contracts are in `src/shared/types.ts` (Developer 1). Changing a type there is announced to the team first; the zod schemas in `index.ts` and `register.ts` fail to compile if they drift from it.
 
 ## Work Buddy Screenshot
-![WorkBuddy Evidence](images/Workbuddy_Usage_Evidence.jpeg)
-![WorkBuddy Evidence](images/Workbuddy_Usage_Evidence1.jpeg)
-![WorkBuddy Evidence](images/Workbuddy_Usage_Evidence2.jpeg)
-![WorkBuddy Evidence](images/Workbuddy_Usage_Evidence3.jpeg)
-![WorkBuddy Evidence](images/Workbuddy_Usage_Evidence4.jpeg)
+![WorkBuddy Evidence](docs/images/Workbuddy_Usage_Evidence.jpeg)
+![WorkBuddy Evidence](docs/images/Workbuddy_Usage_Evidence1.jpeg)
+![WorkBuddy Evidence](docs/images/Workbuddy_Usage_Evidence2.jpeg)
+![WorkBuddy Evidence](docs/images/Workbuddy_Usage_Evidence3.jpeg)
+![WorkBuddy Evidence](docs/images/Workbuddy_Usage_Evidence4.jpeg)
 
 ---
 
