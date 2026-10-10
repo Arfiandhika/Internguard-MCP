@@ -463,28 +463,12 @@ Capabilities that depend on WorkBuddy and must be tested on the demo machine:
 
 Shared contracts are in `src/shared/types.ts` (Developer 1). Changing a type there is announced to the team first; the zod schemas in `index.ts` and `register.ts` fail to compile if they drift from it.
 
-## Integration checklist
-
-- [ ] `npm install && npm run build` succeeds on a clean clone
-- [ ] `npm run inspect:cli` lists 4 tools
-- [ ] `hello_internguard` returns success in Inspector
-- [ ] Dev 2 merged `scam-check.ts`; `hello_internguard` shows `check_internship_risk: "module"`
-- [ ] Dev 3 merged `company-check.ts` and `eligibility.ts`; both show `"module"`
-- [ ] Dev 4 merged `formatter.ts`; tool output is formatted text, not raw JSON
-- [ ] No `TEMPORARY STUB` warnings in `hello_internguard` output
-- [ ] No `ERROR ... failed to load` lines in stderr at startup
-- [ ] `npm test` passes
-- [ ] Each tool tested in Inspector with a realistic input and an invalid input
-- [ ] `codebuddy mcp list` shows `internguard ... ✓ Connected` on the demo machine
-- [ ] Desktop app: config path recorded in the README, server toggled on under *My MCP*
-- [ ] Logged-in WorkBuddy session calls `hello_internguard` successfully
-- [ ] `mcp__internguard` permission rule added (avoids approval prompts during the demo)
-- [ ] WorkBuddy runs an end-to-end demo prompt that triggers all three checks
-- [ ] Demo machine: Node 22+, absolute paths in config, `dist/` freshly built
-- [ ] `npm test` passes (99 tests) and `npm run demo:prepare` → approve → `demo:execute` works
-- [ ] WorkBuddy config has `INTERNGUARD_DATA_DIR`/`INTERNGUARD_EXPORTS_DIR` matching the approval interface
-- [ ] WorkBuddy denied shell/web tools during the demo; `npm run approval` running in the student's terminal
-- [ ] Final `get_application_tracker` shows 3 applications, all files verified, none falsely `SUBMITTED`
+## Work Buddy Screenshot
+![WorkBuddy Evidence](images/Workbuddy_Usage_Evidence.jpeg)
+![WorkBuddy Evidence](images/Workbuddy_Usage_Evidence1.jpeg)
+![WorkBuddy Evidence](images/Workbuddy_Usage_Evidence2.jpeg)
+![WorkBuddy Evidence](images/Workbuddy_Usage_Evidence3.jpeg)
+![WorkBuddy Evidence](images/Workbuddy_Usage_Evidence4.jpeg)
 
 ---
 
